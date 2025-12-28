@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Do You Love Me</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+<div id="hearts"></div>
+
+<!-- START PAGE -->
+<section id="page1" class="page active">
+  <h1 class="fade-in">Do you love me?</h1>
+  <img src="images/main.jpg" class="main-img fade-in" />
+  <div class="buttons">
+    <button onclick="yesClicked()">Yes</button>
+    <button onclick="noClicked()">No</button>
+  </div>
+</section>
+
+<!-- TRY AGAIN PAGE -->
+<section id="surePage" class="page">
+  <h1 class="fade-in">ARE YOU SURE?</h1>
+  <img src="images/tryagain.jpg" class="main-img fade-in" id="tryAgainImg"/>
+  <button onclick="tryAgain()">Try Again</button>
+</section>
+
+<!-- GIFTS PAGE -->
+<section id="giftsPage" class="page">
+  <h1 class="fade-in">Gifts for you</h1>
+  <div class="gift-grid">
+    <img src="images/gift.jpg" class="giftImg" onclick="openGift(1)">
+    <img src="images/gift.jpg" class="giftImg" onclick="openGift(2)">
+    <img src="images/gift.jpg" class="giftImg" onclick="openGift(3)">
+    <img src="images/gift.jpg" class="giftImg" onclick="openGift(4)">
+  </div>
+</section>
+
+<!-- GIFT 1 -->
+<section id="gift1" class="page">
+  <h1 class="fade-in">You are my favourite girl</h1>
+  <img src="images/gift1.jpg" class="main-img fade-in giftImg">
+  <p class="fade-in">I love you the most</p>
+  <button class="back" onclick="goBack()">Back</button>
+</section>
+
+<!-- GIFT 2 -->
+<section id="gift2" class="page">
+  <h1 class="fade-in">I hope a virtual hug</h1>
+  <img src="images/gift2.gif" class="main-img fade-in giftImg">
+  <p class="fade-in"><b>Warm your heart</b></p>
+  <button class="back" onclick="goBack()">Back</button>
+</section>
+
+<!-- GIFT 3 -->
+<section id="gift3" class="page bg-mem">
+  <h1 class="fade-in">I miss us</h1>
+  <div class="memories">
+    <img src="images/gift3a.jpg" class="fade-in giftImg">
+    <img src="images/gift3b.jpg" class="fade-in giftImg">
+    <img src="images/gift3c.jpg" class="fade-in giftImg">
+  </div>
+  <button class="back bottom" onclick="goBack()">Back</button>
+</section>
+
+<!-- GIFT 4 -->
+<section id="gift4" class="page beige">
+  <img src="images/gift4.jpg" class="single-img fade-in giftImg">
+  <button class="back bottom" onclick="goToStart()">Back to Start</button>
+</section>
+
+<script src="js/script.js"></script>
+</body>
+</html>
